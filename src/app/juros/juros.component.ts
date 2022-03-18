@@ -6,8 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./juros.component.css']
 })
 export class JurosComponent implements OnInit {
+  vp: number; 
+  j: number; 
+  n: number;
 
-  constructor() { }
+  constructor() {
+    this.vp = 100;
+    this.j = 2.5;
+    this.n = 3;
+  }
 
   ngOnInit() {
   }
