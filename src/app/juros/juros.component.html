@@ -9,7 +9,7 @@
 <div>Valor futuro:</div>
 <h4>R$ {{ getJuros() }}</h4>
 
-<table border="1">
+<table border="1" *ngFor="let data in getJurosComp">
   <tr>
     <th> n </th>
     <th> Juro Simples </th>

@@ -24,7 +24,7 @@ export class JurosComponent implements OnInit {
     return this.vp * (1 + (this.j / 100) * this.n);
   }
 
-  getJuroComp() {
+  getJurosComp() {
     for (var i = 1; i < 1.0; i++) {
       var vf = this.vp + 1 * (Math.pow(this.j, this.n));
     }
