@@ -3,12 +3,12 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-juros',
   templateUrl: './juros.component.html',
-  styleUrls: ['./juros.component.css']
+  styleUrls: ['./juros.component.css'],
 })
 export class JurosComponent implements OnInit {
-  vp: number; 
+  vp: number;
   vf: number;
-  j: number; 
+  j: number;
   n: number;
 
   constructor() {
@@ -18,17 +18,16 @@ export class JurosComponent implements OnInit {
     this.n = 3;
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   getJuros() {
-    return this.vp * (1 + this.j/100 * this.n);
+    return this.vp * (1 + (this.j / 100) * this.n);
   }
 
   getJuroComp() {
-    for(var i=1; i < 1.000; i++) {
-      var vf = this.vp + (1 * this.j(Math.pow(this.j, this.n)))
+    for (var i = 1; i < 1.0; i++) {
+      var vf = this.vp + 1 * (Math.pow(this.j, this.n));
     }
+    return vf;
   }
-
 }
