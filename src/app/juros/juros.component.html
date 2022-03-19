@@ -7,7 +7,6 @@
 <div>Período (em meses):</div>
 <input type="number" step="0.01" [(ngModel)]="n" />
 <div>Valor futuro:</div>
-<input TYPE="number" STEP="0.01" />
 <h4>R$ {{ getJuros() }}</h4>
 
 <table border="1">
@@ -19,6 +18,6 @@
   <tr>
     <td></td>
     <td></td>
-    <td></td>
+    <td> {{getJuroComp()}} </td>
   </tr>
 </table>
