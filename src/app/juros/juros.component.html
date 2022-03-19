@@ -15,10 +15,10 @@
     <th> Juro Simples </th>
     <th> Juro Composto </th>
   </tr>
-  <tr>
+  <tr *ngFor="let item in list">
     <td>  </td>
     <td>  </td>
-    <td>  </td>
+    <td> {{ getJurosComp() }} </td>
   </tr>
   <tr>
     <td>  </td>
